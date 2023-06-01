@@ -26,9 +26,10 @@ export const Header = () => {
         <NavLink className="nav-link" to="/Home">Home</NavLink>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle"  id="navbarDropdown"  href="/" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Soluciones
         </a>
+
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
           <NavLink className="dropdown-item" to="/IngenieriayConstruccion" >Ingeniería y Construcción</NavLink>
           <NavLink className="dropdown-item" to="/GobiernoySociedad">Gobierno y Sociedad</NavLink>
@@ -40,7 +41,7 @@ export const Header = () => {
       </li>
 
       <li className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a className="nav-link dropdown-toggle" id="navbarDropdown" href="/" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Tecnologías
         </a>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
