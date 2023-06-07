@@ -20,7 +20,7 @@ import { TeledeteccionySensores } from './components/TeledeteccionySensores/Tele
 import { Plataformasdigitales } from './components/Plataformasdigitales/Plataformasdigitales'
 
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 
 
@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="App">
 
-<BrowserRouter>
+<HashRouter>
 <Header />
 
 <Routes>
@@ -57,7 +57,7 @@ function App() {
   
 </Routes>
 
-</BrowserRouter>
+</HashRouter>
 
 
 
