@@ -7,6 +7,9 @@ import capacitaciongis from '../../images/capacitacion/capacitacionGISmini.png';
 import arcgis from '../../images/capacitacion/arcgis.png';
 import qgis from '../../images/capacitacion/qgis.png';
 
+import { NavLink } from 'react-router-dom'
+
+
 export const Capacitacion = () => {
   return (
     <div>
@@ -27,7 +30,7 @@ export const Capacitacion = () => {
 {/* Notas Capacitacion*/}
 <div className="container notas">
   <div className="row">
-    <div classname="col-md-6  col-sm-6  col-xs-12 text-center ">
+    <div className="col-md-6  col-sm-6  col-xs-12 text-center ">
       <img src={capacitacionnota1} alt="" />
       <h4>Programas Actualizados</h4>
       <p>Actualizamos constantemente las clases, conforme a actualizaciones más reciente del software </p>
@@ -55,29 +58,30 @@ export const Capacitacion = () => {
 
       </div>
 
-      <div classname="col-md-6 c1imagen">
-        <img src={capacitaciongis} class="img-fluid" alt="" />
+      <div className="col-md-6 c1imagen">
+        <img src={capacitaciongis} className="img-fluid" alt="" />
       </div>
     </div>
   </div>
 </section>
 
+
+
 {/* Contenedor Cartas*/}
 <section className="cartascapacitacion">
-  <div className="container ">
-    <div className="row">
-      <h2>Nuestros Cursos</h2>
-      <div className="card-deck ">
-        <div className="card shadow-sm p-3 mb-5 bg-white rounded">
+<div className="cartascapacitacion">
+    <div className="container">
+      <div className='row'>
+      <div className="shadow-sm p-3 mb-5 bg-white rounded col-md-5  col-sm-5  col-xs-12" id='targeton'>
           <img className="card-img-top " src={qgis} alt=" " />
           <div className="card-body">
             <h5 className="card-title">QGIS</h5>
             <p className="card-text">Aprende a realizar mapas, manipular y procesar datos geoespaciales en QGIS</p>
           </div>
-        </div>
+    </div>  
 
-        <div className="card shadow-sm p-3 mb-5 bg-white rounded">
-          <img className="card-img-top" src={arcgis}  alt=" " />
+    <div className="shadow-sm p-3 mb-5 bg-white rounded col-md-5  col-sm-5  col-xs-12" id='targeton'>
+    <img className="card-img-top" src={arcgis}  alt=" " />
           <div className="card-body">
             <h5 className="card-title">ArcGIS</h5>
             
@@ -89,15 +93,13 @@ export const Capacitacion = () => {
 
               <p class="card-text">Aprende a realizar mapas, manipular y procesar datos geoespaciales en ArcGIS</p>
             
-            <button type="button" class="btn btn-outline-info"><a href="cursoarcgis/cursoarcgis.html">Más Información </a></button>
+            <button type="button" class="btn btn-outline-info"><NavLink to="/Cursoarcgis">Más Información</NavLink></button>
           </div>
-        </div>
+    </div>  
 
       </div>
-
     </div>
-
-  </div>
+</div>
 
 </section>
 
@@ -105,3 +107,4 @@ export const Capacitacion = () => {
     </div>
   )
 }
+

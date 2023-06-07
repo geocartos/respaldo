@@ -16,22 +16,26 @@ export const Footer = () => {
         </div>
         <div className="col-md-3 col-sm-6 col-xs-12 segmento-dos md-mb-30 sm-mb-30">
           <ul>
-            <li><p><i className="fas fa-map-marker-alt"></i>   Prol. 11 Sur 4701 Reforma Agua Azul, 72430 Puebla, Pue.</p></li>
+            <li><p><i className="fas fa-map-marker-alt"></i> Prol. 11 Sur 4701 Reforma Agua Azul, 72430 Puebla, Pue.</p></li>
             <li><p><i className="fas fa-phone-alt"></i> Telefonos: +52 22 22 54 07 75 / +52 22 24 39 76 47</p></li>
             <li><p><i className="far fa-envelope"></i> geocartosmx@outlook.com</p></li>
           </ul>
 
         </div>
         <div className="col-md-3 col-sm-6 col-xs-12 segmento-tres sm-mb-30">
-
-          
+        <h2>Blog</h2>
+          <p>Estate actualizado de lo último en GIS</p>  
+          <NavLink className="text-secondary" to="/Blog">Blog</NavLink>
         </div>
+
+
         <div className="col-md-3 col-sm-6 col-xs-12 segmento-cuatro sm-mb-30">
           <h2>Redes sociales</h2>
           <p>Siguenos en nuestras redes sociales</p>
           <a href="https://www.facebook.com/geocartos" class="facebook"><i class="fa fa-facebook"></i></a>
           <a href="https://www.linkedin.com/company/geocartos"><i class="fa fa-linkedin"></i></a>
         </div>
+
       </div>
     </div>
     <div className="container-fluid">

@@ -85,10 +85,14 @@
  
 
  /*Contenedor Cartascapacitacion*/
-.cartascapacitacion{
+ .cartascapacitacion {
     margin: 10vw;
    }
  
+ #targeton{
+   margin-left: 15px;
+ }
+
  .cartascapacitacion h2{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;

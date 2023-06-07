@@ -12,12 +12,16 @@ import { IngenieriayConstruccion } from './components/IngenieriayConstruccion/In
 import { GobiernoySociedad } from './components/GobiernoySociedad/GobiernoySociedad';
 import { RecursosNaturalesyMedioAmbiente } from './components/RecursosNaturalesyMedioAmbiente/RecursosNaturalesyMedioAmbiente';
 import { MarketingyNegocios } from './components/MarketingyNegocios/MarketingyNegocios';
-import { Logistica } from './components/Logistica/Logistica'
-import { Capacitacion } from './components/Capacitacion/Capacitacion'
+import { Logistica } from './components/Logistica/Logistica';
+import { Capacitacion } from './components/Capacitacion/Capacitacion';
+import { Cursoarcgis } from './components/Capacitacion/Cursos/Cursoarcgis/Cursoarcgis'
 
 import { Geografiadigital } from './components/Geografiadigital/Geografiadigital'
 import { TeledeteccionySensores } from './components/TeledeteccionySensores/TeledeteccionySensores'
 import { Plataformasdigitales } from './components/Plataformasdigitales/Plataformasdigitales'
+
+import { Blog } from './components/Blog/Blog'
+import { Articulo } from './components/Blog/Articulo/Articulo'
 
 
 import { HashRouter, Routes, Route } from 'react-router-dom';
@@ -43,6 +47,7 @@ function App() {
   <Route exact path="/MarketingyNegocios" element={<MarketingyNegocios />}/>
   <Route exact path="/Logistica" element={<Logistica/>}/>
   <Route exact path="/Capacitacion" element={<Capacitacion />}/>
+  <Route exact path="/Cursoarcgis" element={<Cursoarcgis />}/>
 
   <Route exact path="/Geografiadigital" element={<Geografiadigital />}/>
   <Route exact path="/TeledeteccionySensores" element={<TeledeteccionySensores />}/>
@@ -50,9 +55,14 @@ function App() {
 
   <Route exact path="/Contacto" element={<Contacto />}/>
   <Route exact path="/Privacidad" element={<Privacidad />}/>
+
+  <Route exact path="/Blog" element={<Blog />}/>
+  <Route exact path="/Articulo" element={<Articulo />}/>
   
   
   <Route exact path="*" element={<Error404 />}/>
+
+  
 
   
 </Routes>

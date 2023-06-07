@@ -7,3 +7,8 @@
     display: block;
     transition: top 2s;
  }
+
+ #navbarSupportedContent {
+    margin-left: 40vw;
+
+ }
